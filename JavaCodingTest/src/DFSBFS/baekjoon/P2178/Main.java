@@ -1,4 +1,5 @@
 package DFSBFS.baekjoon.P2178;
+// BFS 넓이 우선 탐색
 
 import java.io.BufferedReader;
 import java.io.IOException;

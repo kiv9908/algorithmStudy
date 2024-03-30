@@ -1,4 +1,5 @@
 package DFSBFS.baekjoon.P11724;
+// DFS 깊이 우선 탐색
 
 import java.io.BufferedReader;
 import java.io.IOException;
