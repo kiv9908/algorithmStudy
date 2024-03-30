@@ -62,7 +62,7 @@ public class Main {
 		if (!visited[V]) {
 			DFS(V);
 		}
-		// DFS 출력
+		// DFS 출력 (핵심)
 		System.out.println(Dfs.substring(0, Dfs.length() - 1));
 
 		// DFS 방문 리스트
