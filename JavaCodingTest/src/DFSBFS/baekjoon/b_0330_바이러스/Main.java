@@ -44,16 +44,6 @@ public class Main {
 
 		}
 
-		// 방문 확인 후 DFS
-
-//		for (int i = 1; i < N + 1; i++) {
-//			if (!visited[i]) {
-//				DFS(i);
-//				
-//			}
-//		}
-//		System.out.println(count);
-
 		// 노드 1과 연결된 노드 개수 출력
 		if (!visited[1]) {
 			DFS(1);
