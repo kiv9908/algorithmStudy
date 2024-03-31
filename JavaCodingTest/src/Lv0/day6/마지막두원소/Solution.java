@@ -4,7 +4,6 @@ class Solution {
 	public int[] solution(int[] num_list) {
 		int[] answer = {};
 
-//		ing
 		return answer;
 	}
 }
