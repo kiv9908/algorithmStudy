@@ -5,13 +5,17 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Main {
 
 	// 방문 기록 저장 배열
-	static boolean[] visited;
+	static int[] visited;
 	static ArrayList<Integer>[] A;
+	static ArrayList<Integer> C = new ArrayList<Integer>();
+	static int n, m, sum, min;
 
 	public static void main(String[] args) throws IOException {
 
@@ -19,14 +23,13 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 
-		int n = Integer.parseInt(st.nextToken());
-		int m = Integer.parseInt(st.nextToken());
+		n = Integer.parseInt(st.nextToken());
+		m = Integer.parseInt(st.nextToken());
 
 		// 그래프 데이터 저장 인접 리스트
 		A = new ArrayList[n + 1];
 
 		// 방문 기록 저장 배열
-		visited = new boolean[n + 1];
 
 		// 인접리스트를 저장할 수 있게 노드별 공간 마련
 		for (int i = 1; i < n + 1; i++) {
@@ -44,31 +47,56 @@ public class Main {
 
 		}
 
-		int count = 0;
-
-		// 방문 여부 확인 후 DFS 실행
 		for (int i = 1; i < n + 1; i++) {
-			// 방문 안한 경우
-			if (!visited[i]) {
-				count++;
-				DFS(i);
+			visited = new int[n + 1];
+			sum = 0;
+			BFS(i);
+
+			for (int j = 0; j < visited.length; j++) {
+				sum += visited[j];
+				System.out.print(visited[i]);
+				System.out.println();
 			}
+
+			C.add(sum);
+
+//			for (int j : visited) {
+//				System.out.print(j);
+//			}
+
 		}
 
-		System.out.println(count);
+		for (int i = 0; i < C.size(); i++) {
+			System.out.println(C.get(i));
+			if (i == 1) {
+				min = C.get(i);
+			} else {
+				if (min > C.get(i)) {
+					min = C.get(i);
+				}
+			}
 
+		}
+		System.out.println(C.indexOf(min) + 1);
 	}
 
-	public static void DFS(int v) {
-		if (visited[v]) {
-			return;
-		}
+	private static void BFS(int b) {
+		Queue<Integer> queue = new LinkedList<Integer>();
+		queue.offer(b);
 
-		visited[v] = true;
-		for (int i : A[v]) {
-			if (!visited[i]) {
-				DFS(i);
+		visited[b] = 1;
+		while (!queue.isEmpty()) {
+			int now = queue.poll();
+
+			for (int j : A[now]) {
+
+				if (visited[j] == 0) {
+					visited[j] = visited[now] + 1;
+					queue.add(j);
+				}
+
 			}
+
 		}
 
 	}
