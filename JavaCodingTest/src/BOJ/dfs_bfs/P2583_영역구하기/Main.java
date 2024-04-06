@@ -1,4 +1,4 @@
-package DFSBFS.baekjoon.P2583_영역구하기;
+package BOJ.dfs_bfs.P2583_영역구하기;
 // https://www.acmicpc.net/problem/2583
 
 import java.io.BufferedReader;

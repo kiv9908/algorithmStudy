@@ -1,4 +1,4 @@
-package Lv0.day5.주사위게임2;
+package programmers.Lv_0.day5.주사위게임2;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package Lv0.day2.문자열겹쳐쓰기;
+package programmers.Lv_0.day2.문자열겹쳐쓰기;
 
 class Solution {
 	public String solution(String my_string, String overwrite_string, int s) {

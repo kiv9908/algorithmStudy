@@ -1,4 +1,4 @@
-package Lv0.day7.카운트업;
+package programmers.Lv_0.day7.카운트업;
 
 class Solution {
 	public int[] solution(int start_num, int end_num) {

@@ -1,4 +1,4 @@
-package DFSBFS.baekjoon.P11724;
+package BOJ.dfs_bfs.P11724;
 // DFS 깊이 우선 탐색
 
 import java.io.BufferedReader;

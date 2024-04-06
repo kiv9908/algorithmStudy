@@ -1,4 +1,4 @@
-package Lv0.day5.이어붙인수;
+package programmers.Lv_0.day5.이어붙인수;
 
 class Solution {
 	public int solution(int[] num_list) {

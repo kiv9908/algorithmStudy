@@ -1,4 +1,4 @@
-package DFSBFS.baekjoon.b_0330_바이러스;
+package BOJ.dfs_bfs.b_0330_바이러스;
 
 import java.io.BufferedReader;
 import java.io.IOException;

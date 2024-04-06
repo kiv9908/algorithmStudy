@@ -1,4 +1,4 @@
-package Lv0.day2.문자열돌리기;
+package programmers.Lv_0.day2.문자열돌리기;
 
 import java.util.Scanner;
 

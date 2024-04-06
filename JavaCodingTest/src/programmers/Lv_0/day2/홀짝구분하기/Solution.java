@@ -1,4 +1,4 @@
-package Lv0.day2.홀짝구분하기;
+package programmers.Lv_0.day2.홀짝구분하기;
 
 import java.util.Scanner;
 

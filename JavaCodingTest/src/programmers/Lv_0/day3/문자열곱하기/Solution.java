@@ -1,4 +1,4 @@
-package Lv0.day3.문자열곱하기;
+package programmers.Lv_0.day3.문자열곱하기;
 
 class Solution {
 	public String solution(String my_string, int k) {

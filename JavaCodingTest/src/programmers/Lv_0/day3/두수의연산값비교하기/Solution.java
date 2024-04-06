@@ -1,4 +1,4 @@
-package Lv0.day3.두수의연산값비교하기;
+package programmers.Lv_0.day3.두수의연산값비교하기;
 
 class Solution {
 	public int solution(int a, int b) {

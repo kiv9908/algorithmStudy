@@ -1,4 +1,4 @@
-package Lv0.day4.flag에따라다른값변환하기;
+package programmers.Lv_0.day4.flag에따라다른값변환하기;
 
 class Solution {
 	public int solution(int a, int b, boolean flag) {

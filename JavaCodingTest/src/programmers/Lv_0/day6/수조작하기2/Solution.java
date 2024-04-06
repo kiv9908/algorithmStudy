@@ -1,4 +1,4 @@
-package Lv0.day6.수조작하기2;
+package programmers.Lv_0.day6.수조작하기2;
 
 class Solution {
 	public String solution(int[] numLog) {

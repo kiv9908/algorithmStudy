@@ -1,4 +1,4 @@
-package Lv0.day6.수열과구간쿼리2;
+package programmers.Lv_0.day6.수열과구간쿼리2;
 
 /*
  * 

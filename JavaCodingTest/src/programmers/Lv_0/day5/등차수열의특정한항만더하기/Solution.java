@@ -1,4 +1,4 @@
-package Lv0.day5.등차수열의특정한항만더하기;
+package programmers.Lv_0.day5.등차수열의특정한항만더하기;
 
 class Solution {
 	public int solution(int a, int d, boolean[] included) {

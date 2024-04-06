@@ -1,4 +1,4 @@
-package Lv0.day5.원소들의곱과합;
+package programmers.Lv_0.day5.원소들의곱과합;
 
 class Solution {
 	public int solution(int[] num_list) {

@@ -1,4 +1,4 @@
-package Lv0.day2.덧셈식출력하기;
+package programmers.Lv_0.day2.덧셈식출력하기;
 
 import java.util.Scanner;
 

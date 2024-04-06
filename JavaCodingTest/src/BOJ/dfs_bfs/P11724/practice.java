@@ -1,4 +1,4 @@
-package DFSBFS.baekjoon.P11724;
+package BOJ.dfs_bfs.P11724;
 
 import java.io.BufferedReader;
 import java.io.IOException;

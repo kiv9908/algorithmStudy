@@ -1,4 +1,4 @@
-package Lv0.day4.공배수;
+package programmers.Lv_0.day4.공배수;
 
 class Solution {
 	public int solution(int n) {

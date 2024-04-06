@@ -1,4 +1,4 @@
-package Lv0.day1.특수문자출력하기;
+package programmers.Lv_0.day1.특수문자출력하기;
 
 public class Soluton {
 

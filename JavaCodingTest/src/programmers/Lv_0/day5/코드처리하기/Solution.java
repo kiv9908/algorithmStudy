@@ -1,4 +1,4 @@
-package Lv0.day5.코드처리하기;
+package programmers.Lv_0.day5.코드처리하기;
 
 class Solution {
 	public String solution(String code) {

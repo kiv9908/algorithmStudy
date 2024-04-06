@@ -1,4 +1,4 @@
-package Lv0.day6.수조작하기1;
+package programmers.Lv_0.day6.수조작하기1;
 
 class Solution {
 	public int solution(int n, String control) {

@@ -1,4 +1,4 @@
-package Lv0.day3.문자열섞기;
+package programmers.Lv_0.day3.문자열섞기;
 
 class Solution {
 	public String solution(String str1, String str2) {

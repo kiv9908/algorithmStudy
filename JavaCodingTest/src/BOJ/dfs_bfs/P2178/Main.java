@@ -1,4 +1,4 @@
-package DFSBFS.baekjoon.P2178;
+package BOJ.dfs_bfs.P2178;
 // BFS 넓이 우선 탐색
 
 import java.io.BufferedReader;

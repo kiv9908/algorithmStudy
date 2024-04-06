@@ -1,4 +1,4 @@
-package Lv0.day3.더크게합치기;
+package programmers.Lv_0.day3.더크게합치기;
 
 class Solution {
 	public int solution(int a, int b) {

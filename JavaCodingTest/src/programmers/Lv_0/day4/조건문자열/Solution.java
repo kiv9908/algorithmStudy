@@ -1,4 +1,4 @@
-package Lv0.day4.조건문자열;
+package programmers.Lv_0.day4.조건문자열;
 
 class Solution {
 	public int solution(String ineq, String eq, int n, int m) {

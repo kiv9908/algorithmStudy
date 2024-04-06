@@ -1,4 +1,4 @@
-package Lv0.day1.대소문자바꿔서출력하기;
+package programmers.Lv_0.day1.대소문자바꿔서출력하기;
 
 import java.util.Scanner;
 

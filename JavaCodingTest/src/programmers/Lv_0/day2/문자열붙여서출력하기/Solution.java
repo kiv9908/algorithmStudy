@@ -1,4 +1,4 @@
-package Lv0.day2.문자열붙여서출력하기;
+package programmers.Lv_0.day2.문자열붙여서출력하기;
 
 import java.util.Scanner;
 

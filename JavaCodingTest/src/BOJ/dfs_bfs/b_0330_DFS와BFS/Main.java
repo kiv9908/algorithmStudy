@@ -1,4 +1,4 @@
-package DFSBFS.baekjoon.b_0330_DFS와BFS;
+package BOJ.dfs_bfs.b_0330_DFS와BFS;
 
 import java.io.BufferedReader;
 import java.io.IOException;

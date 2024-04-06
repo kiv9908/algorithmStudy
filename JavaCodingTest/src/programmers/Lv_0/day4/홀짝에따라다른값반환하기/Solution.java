@@ -1,4 +1,4 @@
-package Lv0.day4.홀짝에따라다른값반환하기;
+package programmers.Lv_0.day4.홀짝에따라다른값반환하기;
 
 class Solution {
 	public int solution(int n) {

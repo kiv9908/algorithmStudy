@@ -1,4 +1,4 @@
-package Lv0.day4.n의배수;
+package programmers.Lv_0.day4.n의배수;
 
 class Solution {
 	public int solution(int num, int n) {

@@ -1,4 +1,4 @@
-package DFSBFS.baekjoon.P1389_케빈베이컨의6단계법칙;
+package BOJ.dfs_bfs.P1389_케빈베이컨의6단계법칙;
 //https://www.acmicpc.net/problem/1389
 
 import java.io.BufferedReader;
