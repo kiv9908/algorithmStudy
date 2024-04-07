@@ -1,4 +1,4 @@
-package Lv0.day7.수열과구간커리4;
+package programmers.Lv_0.day7.수열과구간커리4;
 
 class Solution {
 	public static int[] solution(int[] arr, int[][] queries) {

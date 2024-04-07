@@ -1,4 +1,4 @@
-package Lv0.day7.배열만들기2;
+package programmers.Lv_0.day7.배열만들기2;
 
 import java.util.ArrayList;
 import java.util.List;
