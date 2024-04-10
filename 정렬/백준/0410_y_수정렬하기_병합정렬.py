@@ -21,4 +21,6 @@ def merge_sort(arr):
 
 n = int(input()) 
 array = [int(input()) for _ in range(n)]  
-print(''.join(map(str, merge_sort(array))))
+arr = merge_sort(array)
+for i in arr:
+    print(i)
