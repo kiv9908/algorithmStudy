@@ -29,44 +29,39 @@ class Solution {
 
 		if (set.size() == 1) {
 			answer = 1111 * a;
-		} else if (set.size() == 2) {
 
+		} else if (set.size() == 2) {
+			// set으로 변환하고 리스트에 추가
 			List<Integer> list = new ArrayList<>();
 			while (it.hasNext()) {
 				list.add(it.next());
 			}
-			
-			int two = 0;
-			int three = 0;
-			
 			List<Integer> list2 = new ArrayList<>();
-			List<Integer> list3 = new ArrayList<>();
-			
-			for (int i = 0; i < list.size(); i++) {
-				if (Collections.frequency(abcd, list.get(i)) == 2) {
-					list2.add(list.get(i));
-				}else if (Collections.frequency(abcd, list.get(i)) == 1 || Collections.frequency(abcd, list.get(i))==3) {
-					list2.add(list.get(i));
-				}
-			}
+			int p3 = 0;
+			int q1 = 0;
 
-			
 			for (int i = 0; i < list.size(); i++) {
 				if (Collections.frequency(abcd, list.get(i)) == 2) {
-					answer = list2.get(0)
-				}else if (Collections.frequency(abcd, list.get(i)) == 1 || Collections.frequency(abcd, list.get(i))==3) {
 					list2.add(list.get(i));
+				} else if (Collections.frequency(abcd, list.get(i)) == 3) {
+					p3 = list.get(i);
+				} else {
+					q1 = list.get(i);
 				}
 			}
 			// 2개 2개인 경우
-			
-			
-			
-			
-			// 3개 1개인 경우
-			
+			if (list2.isEmpty()) {
+				// 3개 1개인 경우
+				answer = (p3 * 10 + q1) * (p3 * 10 + q1);
+			} else {
 
-		} else if (set.size() == 3) {
+				int p = list2.get(0);
+				int q = list2.get(1);
+				answer = (p + q) * Math.abs(p - q);
+			}
+		}
+
+		else if (set.size() == 3) {
 
 			List<Integer> list = new ArrayList<>();
 			while (it.hasNext()) {
@@ -83,7 +78,9 @@ class Solution {
 
 			answer = list.get(0) * list.get(1);
 
-		} else if (set.size() == 4) {
+		}
+
+		else if (set.size() == 4) {
 			List<Integer> list = new ArrayList<>();
 			while (it.hasNext()) {
 				list.add(it.next());
@@ -94,5 +91,10 @@ class Solution {
 		}
 
 		return (int) answer;
+	}
+
+	public static void main(String[] args) {
+		Solution s = new Solution();
+		System.out.println(s.solution(4, 1, 4, 4));
 	}
 }
