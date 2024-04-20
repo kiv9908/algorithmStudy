@@ -1,30 +1,36 @@
 package programmers.Lv_0.day12.이의영역;
 
-import java.util.ArrayList;
-import java.util.List;
-
 class Solution {
 	public int[] solution(int[] arr) {
-		List<Integer> list = new ArrayList<>();
-		int a = 0;
-		int b = 0;
 
+		int start = 0;
+		int end = 0;
+
+		// 2시작 인덱스 찾기
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] == 2) {
-				list.add(arr[i]);
-
-				for (int j = i; j < arr.length; j++) {
-					if (arr[j] != 2) {
-						list.add(arr[j]);
-					} else {
-						list.add(arr[j]);
-						break;
-					}
-				}
-
+				start = i;
+				break;
 			}
 		}
-		int[] answer = list.stream().mapToInt(x -> x).toArray();
+
+		// 2종료 인덱스 찾기
+		for (int i = arr.length - 1; i >= 0; i--) {
+			if (arr[i] == 2) {
+				end = i;
+				break;
+			}
+		}
+
+		int[] answer = new int[end - start + 1];
+		for (int i = start; i < end + 1; i++) {
+			answer[i - start] = arr[i];
+		}
+
+		if (start == 0 && end == 0) {
+			answer[0] = -1;
+		}
+
 		return answer;
 	}
 }
