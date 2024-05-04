@@ -1,4 +1,4 @@
-package number.P1929_소수구하기;
+package BOJ.number.P1929_소수구하기;
 
 import java.util.Scanner;
 
