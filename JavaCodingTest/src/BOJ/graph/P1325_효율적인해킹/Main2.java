@@ -1,5 +1,5 @@
 package BOJ.graph.P1325_효율적인해킹;
-//dfs 시간초과 해결
+//dfs 시간초과 해결!
 
 import java.io.BufferedReader;
 import java.io.IOException;
