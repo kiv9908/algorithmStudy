@@ -4,13 +4,11 @@ class Solution {
 	public String solution(String myString, String pat) {
 		String answer = "";
 
-		if (myString.endsWith(pat)) {
+		int idx = myString.lastIndexOf(pat);
 
-			if (myString.length() >= pat.length()) {
-				answer = myString;
-			}
-		}
+		answer = myString.substring(0, idx) + pat;
 
 		return answer;
+
 	}
 }
