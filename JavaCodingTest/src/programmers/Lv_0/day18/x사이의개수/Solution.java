@@ -1,4 +1,4 @@
-package programmers.Lv_0.day17.X사이의개수;
+package programmers.Lv_0.day18.x사이의개수;
 
 class Solution {
 	public int[] solution(String myString) {
